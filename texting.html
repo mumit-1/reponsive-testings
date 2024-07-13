@@ -4,12 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        
+        .section{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            
+        }
+        .start{
+            /* display: grid; */
+            /* grid-template-columns: repeat(1,1fr),repeat(2,1fr);*/border: 5px solid blue;height: 100%;
+        }
+        .last{
+            border: 3px solid red;height: 100%;
+            width: 100%;
+        }
+        div{
+            
+            box-sizing: border-box;
+            /* height: 50%; */
+        }
+        .main{
+            display: grid;
+            grid-template-columns: auto auto ;
+            /* grid-template-rows: auto; */
+            
+        }
+        .hope{
+            grid-column: span 2;
+        }
+        @media screen and (max-width:600px) {
+            .section {
+                grid-template-columns: repeat(1,1fr);
+            }
+            .main{
+                grid-template-columns: auto;
+            }
+            .hope{
+                grid-column: span 1;
+            }
+            
+        }
     </style>
     <title>testing</title>
 </head>
 <body>
+  <div class="section">
+    <div class="start">
+            boom
+    </div>
+    <div class="start main"> 
+     <div class="last hope">boom</div>
+     <div class="last">boom</div>
+     <div class="last">boom</div>
+</div>
   
+  </div>
    
 </body>
 </html>
