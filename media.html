@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>media</title>
+    <style>
+      * {
+        background-color: black;
+        color: white;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+      }
+      .start {
+        border: 2px solid red;
+        padding: 10px;
+        border-radius: 13.5px;
+        /* margin: 0px auto; */
+      }
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
+      @media screen and (max-width: 576px) {
+        .container {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+      @media screen and (min-width: 576px) and (max-width: 876px) {
+        .container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media screen and (min-width: 876px) and (max-width: 1176px) {
+        .container {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-1</h3>
+        <p>Price - $100</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum magni
+          tempore itaque dolorum nobis veniam cupiditate voluptates illo est
+          accusamus
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-2</h3>
+        <p>Price - $200</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-3</h3>
+        <p>Price - $300</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-4</h3>
+        <p>Price - $400</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-5</h3>
+        <p>Price - $500</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-6</h3>
+        <p>Price - $600</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-7</h3>
+        <p>Price - $700</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-8</h3>
+        <p>Price - $800</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-9</h3>
+        <p>Price - $900</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-10</h3>
+        <p>Price - $1000</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-11</h3>
+        <p>Price - $1100</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-12</h3>
+        <p>Price - $1200</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-13</h3>
+        <p>Price - $1300</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-14</h3>
+        <p>Price - $1400</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-15</h3>
+        <p>Price - $1500</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-16</h3>
+        <p>Price - $1600</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-17</h3>
+        <p>Price - $1700</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-18</h3>
+        <p>Price - $1800</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-19</h3>
+        <p>Price - $1900</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-20</h3>
+        <p>Price - $2000</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-21</h3>
+        <p>Price - $2100</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-22</h3>
+        <p>Price - $2200</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-23</h3>
+        <p>Price - $2300</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-24</h3>
+        <p>Price - $2400</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-25</h3>
+        <p>Price - $2500</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-26</h3>
+        <p>Price - $2600</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-27</h3>
+        <p>Price - $2700</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-28</h3>
+        <p>Price - $2800</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-29</h3>
+        <p>Price - $2900</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+      <div class="start">
+        <img src="football.avif" alt="" />
+        <h3>item-30</h3>
+        <p>Price - $3000</p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque nam
+          aliquam provident cum quaerat repellat optio a vero voluptatum fugiat.
+        </p>
+        <button>buy now</button>
+      </div>
+    </div>
+  </body>
+</html>

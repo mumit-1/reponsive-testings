@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>responsive</title>
+    <style>
+      * {
+        margin: 0px;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 0px;
+      }
+
+      .section {
+        /* border: 8px solid rgb(255, 0, 0); */
+        height: 50vh;
+        box-sizing: border-box;
+        /* this box sizing elemnwt dont make my box over-shaped after giving padding */
+      }
+      img {
+        height: 100%;
+        width: 100%;
+      }
+      .eat {
+        height: 100%;
+        width: 100%;
+        display: block;
+        padding: 20px;
+      }
+      @media screen and (max-width: 600px) {
+        .container {
+          grid-template-columns: repeat(1, 1fr);
+        }
+        .container > *:nth-child(4) {
+          order: 3;
+        }
+        .container > *:nth-child(3) {
+          order: 4;
+        }
+        /* .container{
+                  display: flex;
+                  flex-direction: column;
+                } */
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="section"><img src="football.avif" /></div>
+        <div class="section eat">
+          <h1>item one</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
+            alias officiis! Cum, ab temporibus? Enim accusamus blanditiis quae
+            debitis, eaque nobis veniam deleniti nam obcaecati, facere atque
+            culpa ipsa. Labore unde reiciendis ipsam fugiat tempora nulla
+            voluptates ut magni. Nam, error? At maiores hic dolorem molestiae
+            quod ratione harum. Tempora!
+          </p>
+        </div>
+        <div class="section eat">
+          <h1>item two</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+            pariatur fuga explicabo repellendus in temporibus beatae unde, illo
+            ea hic facere voluptatum non illum tempora est iusto cumque corrupti
+            ipsum minus vel culpa neque alias! Ratione blanditiis voluptates
+            optio quis, voluptatibus aut nemo tenetur dolorem maiores omnis
+            laboriosam, reprehenderit eos!
+          </p>
+        </div>
+        <div class="section"><img src="football.avif" /></div>
+      </div>
+    </main>
+  </body>
+</html>
